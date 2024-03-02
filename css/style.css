@@ -30,23 +30,34 @@ p{
 }
 
 div img{
-    width:150px;
-    height: 150px;
-    display:block;
+    width:100%;
+    max-height: auto;
     margin:auto;
+    border: 5px solid blue;
+    border-radius: 40px;
 }
 
 div{
   display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
+  width: 99%;
+  height: 100%;
 }
 
+@media screen and (min-width:772px) {
+    div img{
+        max-height: 30vh;
+    }
 
+    div{
+      width: 45vw;
+    }        
+}           
 
-
-
+@media screen and (min-width:998px){    
+    div{
+      width: 30vw;
+    }
+}
 
 
 
